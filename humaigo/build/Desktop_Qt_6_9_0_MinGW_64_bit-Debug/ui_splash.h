@@ -204,6 +204,7 @@ public:
         loginPasswordLineEdit->setObjectName("loginPasswordLineEdit");
         loginPasswordLineEdit->setGeometry(QRect(20, 0, 231, 28));
         loginPasswordLineEdit->setFont(font4);
+        loginPasswordLineEdit->setEchoMode(QLineEdit::EchoMode::PasswordEchoOnEdit);
         loginPushButton = new QPushButton(frame);
         loginPushButton->setObjectName("loginPushButton");
         loginPushButton->setGeometry(QRect(70, 260, 161, 41));

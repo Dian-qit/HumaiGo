@@ -66,6 +66,7 @@ void Splash::on_signUpBackPushButton_clicked()
 
 void Splash::on_signUpPushButton_clicked()
 {
+
     QString UserName = ui->registerUsernameLineEdit->text();
     QString password = ui->registerPasswordLineEdit->text();
     QString confirmPassword = ui->registerConfirmPasswordLineEdit->text();
@@ -129,11 +130,8 @@ void Splash::on_loginPushButton_clicked()
     QString Password = ui->loginPasswordLineEdit->text();
 
     if (UserName == "Admin" && Password == "Password") {
-        QMessageBox::information(this, "Login", "Admin Login Success.");
-        this->hide();
-        dashboard *admin = new dashboard();
-        admin->show();
-        return;
+        QMessageBox::information(this, "Login", "Admin Login Success");
+
     }
 
     if (!DB_Connection.isOpen()) {
@@ -148,14 +146,17 @@ void Splash::on_loginPushButton_clicked()
 
     if (QueryGetUser.exec()) {
         int UserFindCount = 0;
+        int UserID = 0;
         while (QueryGetUser.next()) {
             UserFindCount++;
+            UserID = QueryGetUser.value("id").toInt();  // Changed from "UserID" to "id"
+            qDebug() << "Logged in UserID is: " << UserID;
         }
 
         if (UserFindCount == 1) {
             QMessageBox::information(this, "Login", "Login Success");
             this->hide();
-            dashboard *admin = new dashboard();
+            dashboard *admin = new dashboard(UserID);
             admin->show();
         } else {
             QMessageBox::warning(this, "Login", "Invalid username or password.");

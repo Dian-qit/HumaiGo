@@ -328,6 +328,9 @@ color:#000;</string>
         <property name="text">
          <string/>
         </property>
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::PasswordEchoOnEdit</enum>
+        </property>
        </widget>
       </widget>
       <widget class="QPushButton" name="loginPushButton">

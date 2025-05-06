@@ -144,27 +144,47 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
-    QWidget *layoutWidget1;
-    QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
     QFrame *frame_24;
     QWidget *layoutWidget_2;
     QHBoxLayout *horizontalLayout_3;
     QPushButton *pushButton_8;
     QPushButton *pushButton_9;
-    QWidget *layoutWidget_3;
-    QHBoxLayout *horizontalLayout_4;
-    QPushButton *pushButton_10;
-    QPushButton *pushButton_11;
-    QWidget *layoutWidget_4;
-    QHBoxLayout *horizontalLayout_5;
-    QPushButton *pushButton_13;
-    QPushButton *pushButton_14;
     QWidget *layoutWidget_5;
     QHBoxLayout *horizontalLayout_6;
-    QPushButton *pushButton_15;
-    QPushButton *pushButton_16;
+    QPushButton *logoutPushButton;
+    QPushButton *logoutPushButton_2;
+    QWidget *page_8;
+    QFrame *frame_25;
+    QFrame *frame_26;
+    QPushButton *dashboardPushButton_8;
+    QPushButton *settingsPushButton_8;
+    QPushButton *notificationPushButton_8;
+    QPushButton *profilePushButton_8;
+    QFrame *frame_27;
+    QPushButton *pushButton_40;
+    QPushButton *pushButton_41;
+    QLabel *label_16;
+    QFrame *frame_28;
+    QWidget *layoutWidget_3;
+    QHBoxLayout *horizontalLayout_4;
+    QPushButton *pushButton_6;
+    QPushButton *pushButton_10;
+    QWidget *layoutWidget_4;
+    QHBoxLayout *horizontalLayout_5;
+    QLabel *label_19;
+    QLabel *profileEmailLabel;
+    QWidget *layoutWidget_6;
+    QHBoxLayout *horizontalLayout_7;
+    QLabel *label_21;
+    QLabel *profilePasswordLabel;
+    QWidget *layoutWidget_7;
+    QHBoxLayout *horizontalLayout_8;
+    QLabel *label_23;
+    QLabel *profileAddressLabel;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QLabel *label_17;
+    QLabel *profileNameLabel;
 
     void setupUi(QMainWindow *dashboard)
     {
@@ -324,6 +344,7 @@ public:
         frame_3->setObjectName("frame_3");
         frame_3->setGeometry(QRect(20, 190, 111, 91));
         frame_3->setStyleSheet(QString::fromUtf8("border-radius:25px;\n"
+"background-image: url(:/image/Sign up (360 x 640 px) (2).png);\n"
 "background-color:#fff;\n"
 "color:#000;"));
         frame_3->setFrameShape(QFrame::Shape::StyledPanel);
@@ -333,7 +354,8 @@ public:
         frame_4->setGeometry(QRect(140, 190, 111, 91));
         frame_4->setStyleSheet(QString::fromUtf8("border-radius:25px;\n"
 "background-color:#fff;\n"
-"color:#000;"));
+"color:#000;\n"
+"background-image: url(:/image/Sign up (360 x 640 px) (1).png);"));
         frame_4->setFrameShape(QFrame::Shape::StyledPanel);
         frame_4->setFrameShadow(QFrame::Shadow::Raised);
         stackedWidget->addWidget(page);
@@ -969,14 +991,14 @@ public:
         label_6->setAlignment(Qt::AlignmentFlag::AlignCenter);
         frame_23 = new QFrame(frame_20);
         frame_23->setObjectName("frame_23");
-        frame_23->setGeometry(QRect(30, 270, 241, 121));
+        frame_23->setGeometry(QRect(30, 300, 241, 61));
         frame_23->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius:30px;"));
         frame_23->setFrameShape(QFrame::Shape::StyledPanel);
         frame_23->setFrameShadow(QFrame::Shadow::Raised);
         layoutWidget = new QWidget(frame_23);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(20, 60, 201, 37));
+        layoutWidget->setGeometry(QRect(20, 10, 201, 37));
         horizontalLayout_2 = new QHBoxLayout(layoutWidget);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -1000,35 +1022,9 @@ public:
 
         horizontalLayout_2->addWidget(pushButton_5);
 
-        layoutWidget1 = new QWidget(frame_23);
-        layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(20, 20, 201, 37));
-        horizontalLayout = new QHBoxLayout(layoutWidget1);
-        horizontalLayout->setObjectName("horizontalLayout");
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton_2 = new QPushButton(layoutWidget1);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setFont(font8);
-        pushButton_2->setStyleSheet(QString::fromUtf8("color:#000;\n"
-"text-align:left;"));
-        QIcon icon10;
-        icon10.addFile(QString::fromUtf8(":/image/location.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_2->setIcon(icon10);
-        pushButton_2->setIconSize(QSize(35, 35));
-
-        horizontalLayout->addWidget(pushButton_2);
-
-        pushButton_3 = new QPushButton(layoutWidget1);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setStyleSheet(QString::fromUtf8("text-align:right;"));
-        pushButton_3->setIcon(icon9);
-        pushButton_3->setIconSize(QSize(30, 30));
-
-        horizontalLayout->addWidget(pushButton_3);
-
         frame_24 = new QFrame(frame_20);
         frame_24->setObjectName("frame_24");
-        frame_24->setGeometry(QRect(30, 410, 241, 201));
+        frame_24->setGeometry(QRect(30, 410, 241, 141));
         frame_24->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius:30px;"));
         frame_24->setFrameShape(QFrame::Shape::StyledPanel);
@@ -1057,88 +1053,217 @@ public:
 
         horizontalLayout_3->addWidget(pushButton_9);
 
-        layoutWidget_3 = new QWidget(frame_24);
-        layoutWidget_3->setObjectName("layoutWidget_3");
-        layoutWidget_3->setGeometry(QRect(20, 60, 201, 37));
-        horizontalLayout_4 = new QHBoxLayout(layoutWidget_3);
-        horizontalLayout_4->setObjectName("horizontalLayout_4");
-        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
-        pushButton_10 = new QPushButton(layoutWidget_3);
-        pushButton_10->setObjectName("pushButton_10");
-        pushButton_10->setFont(font8);
-        pushButton_10->setStyleSheet(QString::fromUtf8("color:#000;\n"
-"text-align:left;"));
-        QIcon icon11;
-        icon11.addFile(QString::fromUtf8(":/image/password.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_10->setIcon(icon11);
-        pushButton_10->setIconSize(QSize(25, 25));
-
-        horizontalLayout_4->addWidget(pushButton_10);
-
-        pushButton_11 = new QPushButton(layoutWidget_3);
-        pushButton_11->setObjectName("pushButton_11");
-        pushButton_11->setStyleSheet(QString::fromUtf8("text-align:right;"));
-        pushButton_11->setIcon(icon9);
-        pushButton_11->setIconSize(QSize(30, 30));
-
-        horizontalLayout_4->addWidget(pushButton_11);
-
-        layoutWidget_4 = new QWidget(frame_24);
-        layoutWidget_4->setObjectName("layoutWidget_4");
-        layoutWidget_4->setGeometry(QRect(20, 100, 201, 37));
-        horizontalLayout_5 = new QHBoxLayout(layoutWidget_4);
-        horizontalLayout_5->setObjectName("horizontalLayout_5");
-        horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
-        pushButton_13 = new QPushButton(layoutWidget_4);
-        pushButton_13->setObjectName("pushButton_13");
-        pushButton_13->setFont(font8);
-        pushButton_13->setStyleSheet(QString::fromUtf8("color:#000;\n"
-"text-align:left;"));
-        pushButton_13->setIcon(icon1);
-        pushButton_13->setIconSize(QSize(25, 25));
-
-        horizontalLayout_5->addWidget(pushButton_13);
-
-        pushButton_14 = new QPushButton(layoutWidget_4);
-        pushButton_14->setObjectName("pushButton_14");
-        pushButton_14->setStyleSheet(QString::fromUtf8("text-align:right;"));
-        pushButton_14->setIcon(icon9);
-        pushButton_14->setIconSize(QSize(30, 30));
-
-        horizontalLayout_5->addWidget(pushButton_14);
-
         layoutWidget_5 = new QWidget(frame_24);
         layoutWidget_5->setObjectName("layoutWidget_5");
-        layoutWidget_5->setGeometry(QRect(20, 140, 201, 37));
+        layoutWidget_5->setGeometry(QRect(20, 80, 201, 37));
         horizontalLayout_6 = new QHBoxLayout(layoutWidget_5);
         horizontalLayout_6->setObjectName("horizontalLayout_6");
         horizontalLayout_6->setContentsMargins(0, 0, 0, 0);
-        pushButton_15 = new QPushButton(layoutWidget_5);
-        pushButton_15->setObjectName("pushButton_15");
-        pushButton_15->setFont(font8);
-        pushButton_15->setStyleSheet(QString::fromUtf8("color:#000;\n"
+        logoutPushButton = new QPushButton(layoutWidget_5);
+        logoutPushButton->setObjectName("logoutPushButton");
+        logoutPushButton->setFont(font8);
+        logoutPushButton->setStyleSheet(QString::fromUtf8("color:#000;\n"
 "text-align:left;"));
-        QIcon icon12;
-        icon12.addFile(QString::fromUtf8(":/image/back.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
-        pushButton_15->setIcon(icon12);
-        pushButton_15->setIconSize(QSize(25, 25));
+        QIcon icon10;
+        icon10.addFile(QString::fromUtf8(":/image/back.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        logoutPushButton->setIcon(icon10);
+        logoutPushButton->setIconSize(QSize(25, 25));
 
-        horizontalLayout_6->addWidget(pushButton_15);
+        horizontalLayout_6->addWidget(logoutPushButton);
 
-        pushButton_16 = new QPushButton(layoutWidget_5);
-        pushButton_16->setObjectName("pushButton_16");
-        pushButton_16->setStyleSheet(QString::fromUtf8("text-align:right;"));
-        pushButton_16->setIcon(icon9);
-        pushButton_16->setIconSize(QSize(30, 30));
+        logoutPushButton_2 = new QPushButton(layoutWidget_5);
+        logoutPushButton_2->setObjectName("logoutPushButton_2");
+        logoutPushButton_2->setStyleSheet(QString::fromUtf8("text-align:right;"));
+        logoutPushButton_2->setIcon(icon9);
+        logoutPushButton_2->setIconSize(QSize(30, 30));
 
-        horizontalLayout_6->addWidget(pushButton_16);
+        horizontalLayout_6->addWidget(logoutPushButton_2);
 
         stackedWidget->addWidget(page_7);
+        page_8 = new QWidget();
+        page_8->setObjectName("page_8");
+        frame_25 = new QFrame(page_8);
+        frame_25->setObjectName("frame_25");
+        frame_25->setGeometry(QRect(0, -60, 301, 891));
+        frame_25->setStyleSheet(QString::fromUtf8("background-color:#efdb8d;\n"
+"border-radius: 40px;"));
+        frame_25->setFrameShape(QFrame::Shape::StyledPanel);
+        frame_25->setFrameShadow(QFrame::Shadow::Raised);
+        frame_26 = new QFrame(frame_25);
+        frame_26->setObjectName("frame_26");
+        frame_26->setGeometry(QRect(0, 630, 301, 111));
+        frame_26->setStyleSheet(QString::fromUtf8("background-color:#fff;\n"
+"border-radius:20px;"));
+        frame_26->setFrameShape(QFrame::Shape::StyledPanel);
+        frame_26->setFrameShadow(QFrame::Shadow::Raised);
+        dashboardPushButton_8 = new QPushButton(frame_26);
+        dashboardPushButton_8->setObjectName("dashboardPushButton_8");
+        dashboardPushButton_8->setGeometry(QRect(20, 10, 51, 51));
+        dashboardPushButton_8->setStyleSheet(QString::fromUtf8(""));
+        dashboardPushButton_8->setIcon(icon);
+        dashboardPushButton_8->setIconSize(QSize(43, 43));
+        settingsPushButton_8 = new QPushButton(frame_26);
+        settingsPushButton_8->setObjectName("settingsPushButton_8");
+        settingsPushButton_8->setGeometry(QRect(90, 10, 51, 51));
+        settingsPushButton_8->setIcon(icon1);
+        settingsPushButton_8->setIconSize(QSize(40, 40));
+        notificationPushButton_8 = new QPushButton(frame_26);
+        notificationPushButton_8->setObjectName("notificationPushButton_8");
+        notificationPushButton_8->setGeometry(QRect(160, 10, 51, 51));
+        notificationPushButton_8->setIcon(icon2);
+        notificationPushButton_8->setIconSize(QSize(40, 40));
+        profilePushButton_8 = new QPushButton(frame_26);
+        profilePushButton_8->setObjectName("profilePushButton_8");
+        profilePushButton_8->setGeometry(QRect(230, 10, 51, 51));
+        profilePushButton_8->setIcon(icon3);
+        profilePushButton_8->setIconSize(QSize(30, 30));
+        frame_27 = new QFrame(frame_25);
+        frame_27->setObjectName("frame_27");
+        frame_27->setGeometry(QRect(-110, 60, 411, 261));
+        frame_27->setStyleSheet(QString::fromUtf8("background-image: url(:/image/bg.png);\n"
+"border-radius: 0;\n"
+""));
+        frame_27->setFrameShape(QFrame::Shape::StyledPanel);
+        frame_27->setFrameShadow(QFrame::Shadow::Raised);
+        pushButton_40 = new QPushButton(frame_27);
+        pushButton_40->setObjectName("pushButton_40");
+        pushButton_40->setEnabled(true);
+        pushButton_40->setGeometry(QRect(220, 0, 81, 81));
+        pushButton_40->setStyleSheet(QString::fromUtf8("border:none;\n"
+""));
+        pushButton_40->setIcon(icon4);
+        pushButton_40->setIconSize(QSize(60, 60));
+        pushButton_41 = new QPushButton(frame_27);
+        pushButton_41->setObjectName("pushButton_41");
+        pushButton_41->setEnabled(true);
+        pushButton_41->setGeometry(QRect(110, 70, 301, 111));
+        pushButton_41->setStyleSheet(QString::fromUtf8("border:none;\n"
+""));
+        pushButton_41->setIcon(icon8);
+        pushButton_41->setIconSize(QSize(80, 80));
+        label_16 = new QLabel(frame_27);
+        label_16->setObjectName("label_16");
+        label_16->setGeometry(QRect(210, 170, 111, 20));
+        label_16->setFont(font10);
+        label_16->setStyleSheet(QString::fromUtf8("color: #000;"));
+        label_16->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        frame_28 = new QFrame(frame_25);
+        frame_28->setObjectName("frame_28");
+        frame_28->setGeometry(QRect(30, 300, 241, 291));
+        frame_28->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"border-radius:30px;"));
+        frame_28->setFrameShape(QFrame::Shape::StyledPanel);
+        frame_28->setFrameShadow(QFrame::Shadow::Raised);
+        layoutWidget_3 = new QWidget(frame_28);
+        layoutWidget_3->setObjectName("layoutWidget_3");
+        layoutWidget_3->setGeometry(QRect(20, 10, 201, 37));
+        horizontalLayout_4 = new QHBoxLayout(layoutWidget_3);
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
+        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
+        pushButton_6 = new QPushButton(layoutWidget_3);
+        pushButton_6->setObjectName("pushButton_6");
+        pushButton_6->setFont(font8);
+        pushButton_6->setStyleSheet(QString::fromUtf8("color:#000;\n"
+"text-align:left;"));
+        pushButton_6->setIcon(icon3);
+        pushButton_6->setIconSize(QSize(25, 25));
+
+        horizontalLayout_4->addWidget(pushButton_6);
+
+        pushButton_10 = new QPushButton(layoutWidget_3);
+        pushButton_10->setObjectName("pushButton_10");
+        pushButton_10->setStyleSheet(QString::fromUtf8("text-align:right;"));
+        pushButton_10->setIcon(icon9);
+        pushButton_10->setIconSize(QSize(30, 30));
+
+        horizontalLayout_4->addWidget(pushButton_10);
+
+        layoutWidget_4 = new QWidget(frame_28);
+        layoutWidget_4->setObjectName("layoutWidget_4");
+        layoutWidget_4->setGeometry(QRect(30, 110, 175, 23));
+        horizontalLayout_5 = new QHBoxLayout(layoutWidget_4);
+        horizontalLayout_5->setObjectName("horizontalLayout_5");
+        horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
+        label_19 = new QLabel(layoutWidget_4);
+        label_19->setObjectName("label_19");
+        label_19->setFont(font1);
+        label_19->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout_5->addWidget(label_19);
+
+        profileEmailLabel = new QLabel(layoutWidget_4);
+        profileEmailLabel->setObjectName("profileEmailLabel");
+        profileEmailLabel->setFont(font8);
+        profileEmailLabel->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout_5->addWidget(profileEmailLabel);
+
+        layoutWidget_6 = new QWidget(frame_28);
+        layoutWidget_6->setObjectName("layoutWidget_6");
+        layoutWidget_6->setGeometry(QRect(30, 150, 171, 23));
+        horizontalLayout_7 = new QHBoxLayout(layoutWidget_6);
+        horizontalLayout_7->setObjectName("horizontalLayout_7");
+        horizontalLayout_7->setContentsMargins(0, 0, 0, 0);
+        label_21 = new QLabel(layoutWidget_6);
+        label_21->setObjectName("label_21");
+        label_21->setFont(font1);
+        label_21->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout_7->addWidget(label_21);
+
+        profilePasswordLabel = new QLabel(layoutWidget_6);
+        profilePasswordLabel->setObjectName("profilePasswordLabel");
+        profilePasswordLabel->setFont(font8);
+        profilePasswordLabel->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout_7->addWidget(profilePasswordLabel);
+
+        layoutWidget_7 = new QWidget(frame_28);
+        layoutWidget_7->setObjectName("layoutWidget_7");
+        layoutWidget_7->setGeometry(QRect(30, 190, 161, 23));
+        horizontalLayout_8 = new QHBoxLayout(layoutWidget_7);
+        horizontalLayout_8->setObjectName("horizontalLayout_8");
+        horizontalLayout_8->setContentsMargins(0, 0, 0, 0);
+        label_23 = new QLabel(layoutWidget_7);
+        label_23->setObjectName("label_23");
+        label_23->setFont(font1);
+        label_23->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout_8->addWidget(label_23);
+
+        profileAddressLabel = new QLabel(layoutWidget_7);
+        profileAddressLabel->setObjectName("profileAddressLabel");
+        profileAddressLabel->setFont(font8);
+        profileAddressLabel->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout_8->addWidget(profileAddressLabel);
+
+        widget = new QWidget(frame_28);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(30, 70, 175, 23));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        label_17 = new QLabel(widget);
+        label_17->setObjectName("label_17");
+        label_17->setFont(font1);
+        label_17->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout->addWidget(label_17);
+
+        profileNameLabel = new QLabel(widget);
+        profileNameLabel->setObjectName("profileNameLabel");
+        profileNameLabel->setFont(font8);
+        profileNameLabel->setStyleSheet(QString::fromUtf8("color:#000;"));
+
+        horizontalLayout->addWidget(profileNameLabel);
+
+        stackedWidget->addWidget(page_8);
         dashboard->setCentralWidget(centralwidget);
 
         retranslateUi(dashboard);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(7);
 
 
         QMetaObject::connectSlotsByName(dashboard);
@@ -1146,7 +1271,7 @@ public:
 
     void retranslateUi(QMainWindow *dashboard)
     {
-        dashboard->setWindowTitle(QCoreApplication::translate("dashboard", "MainWindow", nullptr));
+        dashboard->setWindowTitle(QCoreApplication::translate("dashboard", "humaigo", nullptr));
         showRecordsPushButton->setText(QCoreApplication::translate("dashboard", "Show records", nullptr));
         remarksLabel->setText(QCoreApplication::translate("dashboard", "NORMAL", nullptr));
         suggestionLabel->setText(QCoreApplication::translate("dashboard", "Suggestion", nullptr));
@@ -1240,16 +1365,27 @@ public:
         label_6->setText(QCoreApplication::translate("dashboard", "Mang Juan", nullptr));
         pushButton_4->setText(QCoreApplication::translate("dashboard", "My Profile ", nullptr));
         pushButton_5->setText(QString());
-        pushButton_2->setText(QCoreApplication::translate("dashboard", "My Address ", nullptr));
-        pushButton_3->setText(QString());
         pushButton_8->setText(QCoreApplication::translate("dashboard", "Notification", nullptr));
         pushButton_9->setText(QString());
-        pushButton_10->setText(QCoreApplication::translate("dashboard", "Password", nullptr));
-        pushButton_11->setText(QString());
-        pushButton_13->setText(QCoreApplication::translate("dashboard", "Settings", nullptr));
-        pushButton_14->setText(QString());
-        pushButton_15->setText(QCoreApplication::translate("dashboard", "Logout", nullptr));
-        pushButton_16->setText(QString());
+        logoutPushButton->setText(QCoreApplication::translate("dashboard", "Logout", nullptr));
+        logoutPushButton_2->setText(QString());
+        dashboardPushButton_8->setText(QString());
+        settingsPushButton_8->setText(QString());
+        notificationPushButton_8->setText(QString());
+        profilePushButton_8->setText(QString());
+        pushButton_40->setText(QString());
+        pushButton_41->setText(QString());
+        label_16->setText(QCoreApplication::translate("dashboard", "Admin", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("dashboard", "Account", nullptr));
+        pushButton_10->setText(QString());
+        label_19->setText(QCoreApplication::translate("dashboard", "Email:", nullptr));
+        profileEmailLabel->setText(QCoreApplication::translate("dashboard", "N/A", nullptr));
+        label_21->setText(QCoreApplication::translate("dashboard", "Password:", nullptr));
+        profilePasswordLabel->setText(QCoreApplication::translate("dashboard", "N/A", nullptr));
+        label_23->setText(QCoreApplication::translate("dashboard", "Address:", nullptr));
+        profileAddressLabel->setText(QCoreApplication::translate("dashboard", "N/A", nullptr));
+        label_17->setText(QCoreApplication::translate("dashboard", "Name:", nullptr));
+        profileNameLabel->setText(QCoreApplication::translate("dashboard", "N/A", nullptr));
     } // retranslateUi
 
 };

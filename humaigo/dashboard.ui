@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>humaigo</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #e5c341;</string>
@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>7</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QFrame" name="frame">
@@ -457,6 +457,7 @@ font-weight:800;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">border-radius:25px;
+background-image: url(:/image/Sign up (360 x 640 px) (2).png);
 background-color:#fff;
 color:#000;</string>
       </property>
@@ -479,7 +480,8 @@ color:#000;</string>
       <property name="styleSheet">
        <string notr="true">border-radius:25px;
 background-color:#fff;
-color:#000;</string>
+color:#000;
+background-image: url(:/image/Sign up (360 x 640 px) (1).png);</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::Shape::StyledPanel</enum>
@@ -2651,9 +2653,9 @@ border-radius: 0;
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>270</y>
+         <y>300</y>
          <width>241</width>
-         <height>121</height>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2670,7 +2672,7 @@ border-radius:30px;</string>
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>60</y>
+          <y>10</y>
           <width>201</width>
           <height>37</height>
          </rect>
@@ -2725,65 +2727,6 @@ text-align:left;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="layoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>20</y>
-          <width>201</width>
-          <height>37</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QPushButton" name="pushButton_2">
-           <property name="font">
-            <font>
-             <family>Tahoma</family>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:#000;
-text-align:left;</string>
-           </property>
-           <property name="text">
-            <string>My Address </string>
-           </property>
-           <property name="icon">
-            <iconset resource="res.qrc">
-             <normaloff>:/image/location.png</normaloff>:/image/location.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>35</width>
-             <height>35</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="styleSheet">
-            <string notr="true">text-align:right;</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="res.qrc">
-             <normaloff>:/image/right-arrow-vector.png</normaloff>:/image/right-arrow-vector.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
       </widget>
       <widget class="QFrame" name="frame_24">
        <property name="geometry">
@@ -2791,7 +2734,7 @@ text-align:left;</string>
          <x>30</x>
          <y>410</y>
          <width>241</width>
-         <height>201</height>
+         <height>141</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -2863,136 +2806,18 @@ text-align:left;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="layoutWidget_3">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>60</y>
-          <width>201</width>
-          <height>37</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <widget class="QPushButton" name="pushButton_10">
-           <property name="font">
-            <font>
-             <family>Tahoma</family>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:#000;
-text-align:left;</string>
-           </property>
-           <property name="text">
-            <string>Password</string>
-           </property>
-           <property name="icon">
-            <iconset resource="res.qrc">
-             <normaloff>:/image/password.png</normaloff>:/image/password.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_11">
-           <property name="styleSheet">
-            <string notr="true">text-align:right;</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="res.qrc">
-             <normaloff>:/image/right-arrow-vector.png</normaloff>:/image/right-arrow-vector.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="layoutWidget_4">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>100</y>
-          <width>201</width>
-          <height>37</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_5">
-         <item>
-          <widget class="QPushButton" name="pushButton_13">
-           <property name="font">
-            <font>
-             <family>Tahoma</family>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:#000;
-text-align:left;</string>
-           </property>
-           <property name="text">
-            <string>Settings</string>
-           </property>
-           <property name="icon">
-            <iconset resource="res.qrc">
-             <normaloff>:/image/settings.png</normaloff>:/image/settings.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_14">
-           <property name="styleSheet">
-            <string notr="true">text-align:right;</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="res.qrc">
-             <normaloff>:/image/right-arrow-vector.png</normaloff>:/image/right-arrow-vector.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>30</width>
-             <height>30</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
        <widget class="QWidget" name="layoutWidget_5">
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>140</y>
+          <y>80</y>
           <width>201</width>
           <height>37</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_6">
          <item>
-          <widget class="QPushButton" name="pushButton_15">
+          <widget class="QPushButton" name="logoutPushButton">
            <property name="font">
             <font>
              <family>Tahoma</family>
@@ -3019,7 +2844,7 @@ text-align:left;</string>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_16">
+          <widget class="QPushButton" name="logoutPushButton_2">
            <property name="styleSheet">
             <string notr="true">text-align:right;</string>
            </property>
@@ -3035,6 +2860,509 @@ text-align:left;</string>
              <width>30</width>
              <height>30</height>
             </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QFrame" name="frame_25">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-60</y>
+        <width>301</width>
+        <height>891</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#efdb8d;
+border-radius: 40px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_26">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>630</y>
+         <width>301</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#fff;
+border-radius:20px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="dashboardPushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/dashboard.png</normaloff>:/image/dashboard.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>43</width>
+          <height>43</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="settingsPushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/settings.png</normaloff>:/image/settings.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="notificationPushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/notification.png</normaloff>:/image/notification.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="profilePushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>10</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/profile.png</normaloff>:/image/profile.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_27">
+       <property name="geometry">
+        <rect>
+         <x>-110</x>
+         <y>60</y>
+         <width>411</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/image/bg.png);
+border-radius: 0;
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="pushButton_40">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>0</y>
+          <width>81</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/humaigoLogo-removebg-preview.png</normaloff>:/image/humaigoLogo-removebg-preview.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_41">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>70</y>
+          <width>301</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/image/profile-circle.png</normaloff>:/image/profile-circle.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>80</width>
+          <height>80</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>170</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Tahoma</family>
+          <pointsize>11</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #000;</string>
+        </property>
+        <property name="text">
+         <string>Admin</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_28">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>300</y>
+         <width>241</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:30px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>201</width>
+          <height>37</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;
+text-align:left;</string>
+           </property>
+           <property name="text">
+            <string>Account</string>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/image/profile.png</normaloff>:/image/profile.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="styleSheet">
+            <string notr="true">text-align:right;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/image/right-arrow-vector.png</normaloff>:/image/right-arrow-vector.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>175</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_19">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <pointsize>10</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>Email:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="profileEmailLabel">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>N/A</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>150</y>
+          <width>171</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_21">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <pointsize>10</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>Password:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="profilePasswordLabel">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>N/A</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>190</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="label_23">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <pointsize>10</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>Address:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="profileAddressLabel">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>N/A</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>175</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_17">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <pointsize>10</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="profileNameLabel">
+           <property name="font">
+            <font>
+             <family>Tahoma</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#000;</string>
+           </property>
+           <property name="text">
+            <string>N/A</string>
            </property>
           </widget>
          </item>

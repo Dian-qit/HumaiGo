@@ -10,6 +10,7 @@
 #include <QTimer>
 #include <QtCore>
 #include <QtGui>
+#include <splash.h>
 
 
 
@@ -22,7 +23,7 @@ class dashboard : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit dashboard(QWidget *parent = nullptr);
+    explicit dashboard(int userID, QWidget *parent = nullptr);
     ~dashboard();
 
 
@@ -31,7 +32,7 @@ public:
 private slots:
     void on_sensor_clicked();
 
-    void on_showRecordsPushButton_clicked();
+
 
     void on_dashboardPushButton_clicked();
 
@@ -99,6 +100,22 @@ private slots:
 
     void on_notificationPushButton_7_clicked();
 
+    void on_logoutPushButton_clicked();
+
+    void on_logoutPushButton_2_clicked();
+
+    void on_notificationPushButton_8_clicked();
+
+    void on_settingsPushButton_8_clicked();
+
+    void on_dashboardPushButton_8_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_profilePushButton_8_clicked();
+
 private:
     Ui::dashboard *ui;
     QSqlDatabase DB_Connection;
@@ -107,11 +124,13 @@ private:
 
     QTimer* notificationTimer;
     void updateNotifications();
-
+    int userID;
     void loadDataToTable();
     QTimer* refreshTimer;
 
     QTimer *tableRefreshTimer;
+
+    void loadUserProfile(int userId);
 };
 
 #endif // DASHBOARD_H

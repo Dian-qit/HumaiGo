@@ -2,9 +2,10 @@
 #include "ui_dashboard.h"
 
 
-dashboard::dashboard(QWidget *parent)
+dashboard::dashboard(int userID, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::dashboard)
+    , userID(userID)
 {
     ui->setupUi(this);
 
@@ -38,6 +39,8 @@ dashboard::dashboard(QWidget *parent)
 
     // Initial load of table data
     loadDataToTable();
+
+     loadUserProfile(userID);
 }
 
 dashboard::~dashboard()
@@ -47,7 +50,27 @@ dashboard::~dashboard()
 
 }
 
-
+void dashboard::loadUserProfile(int userId) {
+    QSqlQuery query;
+    query.prepare("SELECT username, email, password FROM users WHERE id = :id");
+    query.bindValue(":id", userId);
+    if (query.exec()) {
+        if (query.next()) {
+            QString username = query.value(0).toString();
+            QString email = query.value(1).toString();
+            QString password = query.value(2).toString();
+            ui->label_6->setText(username);
+            ui->label_16->setText(username);
+            ui->profileNameLabel->setText(username);
+            ui->profileEmailLabel->setText(email);
+            ui->profilePasswordLabel->setText(password);
+        } else {
+            qDebug() << "User not found!";
+        }
+    } else {
+        qDebug() << "Query failed:" << query.lastError().text();
+    }
+}
 
 void dashboard::on_sensor_clicked()
 {
@@ -639,3 +662,56 @@ void dashboard::on_notificationPushButton_7_clicked()
 {
     ui->stackedWidget->setCurrentIndex(5);//notif
 }
+
+void dashboard::on_logoutPushButton_clicked()
+{
+    this->hide();
+    Splash *login = new Splash();
+    login->show();
+    return;
+}
+
+
+void dashboard::on_logoutPushButton_2_clicked()
+{
+    this->hide();
+    Splash *login = new Splash();
+    login->show();
+    return;
+}
+
+
+void dashboard::on_notificationPushButton_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(5);//notif
+}
+
+
+void dashboard::on_settingsPushButton_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);//settings
+}
+
+
+void dashboard::on_dashboardPushButton_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);//dashboard
+}
+
+
+void dashboard::on_pushButton_4_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+
+void dashboard::on_pushButton_5_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+void dashboard::on_profilePushButton_8_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(6);
+}
+
